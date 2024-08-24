@@ -1,3 +1,97 @@
-h1 {
-  background-color: aqua;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+#logo {
+  margin-left: 30px;
+  width: 70px;
+  height: 70px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+.menu a {
+  font-size: 16px;
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+}
+.garis {
+  border-bottom: 1px solid grey;
+  margin: 10px;
+}
+.main,
+.profile,
+.form {
+  margin: 80px;
+}
+.image {
+  height: 578px;
+  width: 1366px;
+  background-image: url(https://picsum.photos/1366/578);
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+.pp,
+.pp p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.photo1,
+.photo2,
+.photo3 {
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+  border-radius: 75px;
+}
+.form {
+  margin-left: 50px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.form th {
+  margin-top: 100px;
+}
+.form input#text {
+  width: 330px;
+  border: 1px solid gray;
+  height: 1.3rem;
+  border-radius: 5px;
+}
+.form input#date {
+  width: 332.5px;
+  border: 1px solid gray;
+  height: 1.3rem;
+  border-radius: 5px;
+}
+.form textarea {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.form button {
+  width: 448px;
+  text-align: center;
+  justify-content: center;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  justify-content: end;
 }

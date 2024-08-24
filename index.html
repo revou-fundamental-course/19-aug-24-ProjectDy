@@ -7,6 +7,93 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Hallo</h1>
+    <!-- Nav / Header -->
+    <nav>
+      <img src="revou.png" id="logo" href="#main" />
+      <div class="menu">
+        <a href="#main">Home</a>
+        <a href="#profile">Our Profile</a>
+        <a href="">Achievement</a>
+        <a href="">Message Us</a>
+      </div>
+    </nav>
+    <div class="garis"></div>
+    <!-- Main Page -->
+    <main>
+      <!-- Main -->
+      <div class="main" id="main">
+        <h2>Welcome user, to Our Website</h2>
+        <p>Ini adalah Website Latihan Pertama</p>
+        <div class="image"></div>
+      </div>
+      <div class="garis"></div>
+      <div class="profile" id="profile">
+        <!-- Profile -->
+        <h2>Our Profile</h2>
+        <div class="pp">
+          <div class="">
+            <div class="photo1"></div>
+            <p>Software Engineer</p>
+          </div>
+          <div class="">
+            <div class="photo2"></div>
+            <p>Software Engineer</p>
+          </div>
+          <div class="">
+            <div class="photo3"></div>
+            <p>Software Engineer</p>
+          </div>
+        </div>
+      </div>
+      <div class="garis"></div>
+      <!-- Form -->
+      <div class="form">
+        <h2>Message Us</h2>
+        <form>
+          <table>
+            <th>
+              <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" id="text" /></td>
+              </tr>
+              <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td><input type="Date" id="date" /></td>
+              </tr>
+              <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                  <input type="radio" name="jk" id="jk" /><label for="lakilaki"
+                    >Laki - Laki</label
+                  >
+                  <input type="radio" name="jk" id="jk" /><label for="perempuan"
+                    >Perempuan</label
+                  ><br />
+                </td>
+              </tr>
+              <tr>
+                <td>Pesan</td>
+                <td>:</td>
+                <td>
+                  <textarea
+                    name="Text1"
+                    cols="42"
+                    rows="5"
+                    id="textarea"
+                  ></textarea>
+                </td>
+              </tr>
+            </th>
+          </table>
+          <button>Submit</button>
+        </form>
+      </div>
+      <div class="garis"></div>
+    </main>
+    <!-- Footer -->
+    <footer>Created by Audy</footer>
   </body>
 </html>
