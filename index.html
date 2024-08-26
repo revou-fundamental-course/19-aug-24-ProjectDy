@@ -15,6 +15,7 @@
         <a href="#profile">Our Profile</a>
         <a href="">Achievement</a>
         <a href="">Message Us</a>
+        <button class="ganti" id="ganti">Ganti Nama</button>
       </div>
     </nav>
     <div class="garis"></div>
@@ -22,7 +23,7 @@
     <main>
       <!-- Main -->
       <div class="main" id="main">
-        <h2>Welcome user, to Our Website</h2>
+        <h2>Welcome <span id="name">Audy</span>, to Our Website</h2>
         <p>Ini adalah Website Latihan Pertama</p>
         <div class="image"></div>
       </div>
@@ -32,15 +33,15 @@
         <h2>Our Profile</h2>
         <div class="pp">
           <div class="">
-            <div class="photo1"></div>
+            <img src="revou.png" class="photo2contoh" />
             <p>Software Engineer</p>
           </div>
           <div class="">
-            <div class="photo2"></div>
+            <img src="revou.png" class="photo2contoh" />
             <p>Software Engineer</p>
           </div>
           <div class="">
-            <div class="photo3"></div>
+            <img src="revou.png" class="photo2contoh" />
             <p>Software Engineer</p>
           </div>
         </div>
@@ -49,29 +50,41 @@
       <!-- Form -->
       <div class="form">
         <h2>Message Us</h2>
-        <form>
-          <table>
-            <th>
+        <div class="form2">
+          <form name="message-form" onsubmit="return validateForm()">
+            <table>
               <tr>
                 <td>Nama</td>
                 <td>:</td>
-                <td><input type="text" id="text" /></td>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Masukkan Nama Anda"
+                    name="nama"
+                  />
+                </td>
               </tr>
               <tr>
                 <td>Tanggal Lahir</td>
                 <td>:</td>
-                <td><input type="Date" id="date" /></td>
+                <td><input type="date" id="date" name="tanggal" /></td>
               </tr>
               <tr>
                 <td>Jenis Kelamin</td>
                 <td>:</td>
                 <td>
-                  <input type="radio" name="jk" id="jk" /><label for="lakilaki"
-                    >Laki - Laki</label
-                  >
-                  <input type="radio" name="jk" id="jk" /><label for="perempuan"
-                    >Perempuan</label
-                  ><br />
+                  <input
+                    type="radio"
+                    name="jk"
+                    id="male"
+                    value="Laki-Laki"
+                  /><label for="male">Laki - Laki</label>
+                  <input
+                    type="radio"
+                    name="jk"
+                    id="female"
+                    value="Perempuan"
+                  /><label for="female">Perempuan</label><br />
                 </td>
               </tr>
               <tr>
@@ -79,21 +92,30 @@
                 <td>:</td>
                 <td>
                   <textarea
-                    name="Text1"
+                    name="pesan"
                     cols="42"
                     rows="5"
-                    id="textarea"
+                    placeholder="Pesan"
                   ></textarea>
                 </td>
               </tr>
-            </th>
-          </table>
-          <button>Submit</button>
-        </form>
+            </table>
+            <button class="btn1" type="submit" value="submit">Submit</button>
+          </form>
+          <div id="output">
+            <p><strong>Nama:</strong> <span id="sender-name"></span></p>
+            <p>
+              <strong>Tanggal Lahir:</strong> <span id="sender-date"></span>
+            </p>
+            <p><strong>Jenis Kelamin:</strong> <span id="sender-jk"></span></p>
+            <p><strong>Pesan:</strong> <span id="sender-message"></span></p>
+          </div>
+        </div>
       </div>
       <div class="garis"></div>
     </main>
     <!-- Footer -->
     <footer>Created by Audy</footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

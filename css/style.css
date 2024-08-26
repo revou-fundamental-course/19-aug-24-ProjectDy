@@ -28,6 +28,15 @@ nav {
   border-bottom: 1px solid grey;
   margin: 10px;
 }
+.ganti {
+  height: 40px;
+  width: 110px;
+  margin-left: 20px;
+  background-color: #96ec89;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid;
+}
 .main,
 .profile,
 .form {
@@ -57,10 +66,14 @@ nav {
   border: 1px solid;
   border-radius: 75px;
 }
-.form {
+.photo2contoh {
+  width: 150px;
+  height: 150px;
+}
+.form2 {
+  display: flex;
   margin-left: 50px;
-  flex: 1;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .form th {
@@ -90,6 +103,9 @@ nav {
   border: 1px solid gray;
   border-radius: 5px;
   cursor: pointer;
+}
+#output {
+  margin-right: 500px;
 }
 footer {
   display: flex;
